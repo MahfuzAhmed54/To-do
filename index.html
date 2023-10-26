@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Task Scheduler</title>
+</head>
+<body>
+    <header>
+        <h1>Task Scheduler</h1>
+    </header>
+    <main>
+        <div class="task-form">
+            <label for="task">Task Name:</label>
+            <input type="text" id="task" placeholder="Enter a new task...">
+            
+            <label for="priority">Priority:</label>
+            <select id="priority">
+                <option value="1">Priority 1</option>
+                <option value="2">Priority 2</option>
+                <option value="3">Priority 3</option>
+                <option value="4">Priority 4</option>
+                <option value="5">Priority 5</option>
+                <option value="6">Priority 6</option>
+                <option value="7">Priority 7</option>
+                <option value="8">Priority 8</option>
+                <option value="9">Priority 9</option>
+            </select>
+            
+            <label for="deadline">Deadline:</label>
+            <input type="date" id="deadline">
+            
+            <button id="add-task">Add Task</button>
+        </div>
+        <div class="task-list" id="task-list">
+            <!-- Tasks will be added here dynamically -->
+        </div>
+    </main>
+    <script src="logic.js"></script>
+</body>
+</html>
